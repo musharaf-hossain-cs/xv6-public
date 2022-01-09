@@ -10,6 +10,7 @@
 #include "fs.h"
 #include "file.h"
 #include "traps.h"
+#include <stdio.h>
 
 struct {
   struct spinlock lock;
@@ -651,4 +652,15 @@ clear(){
       outb(CRTPORT+1, pos);  
 
   return 24;
+}
+
+int 
+shutdown(){
+  outw(0xB004, 0x0|0x2000);
+  outw(0x604, 0x0|0x2000);
+  return 0;
+  /*char *p = "Shutdown";
+  for( ; *p; p++)
+    outb(0x8900, *p);
+  return 25;*/
 }

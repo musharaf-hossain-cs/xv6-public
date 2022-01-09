@@ -123,6 +123,7 @@ void            yield(void);
 int				cps(void);
 int 			triple(int);
 int 			clear(void);
+int  			shutdown(void);
 
 // swtch.S
 void            swtch(struct context**, struct context*);

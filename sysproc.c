@@ -108,3 +108,8 @@ int
 sys_clear( void ){
   return clear();
 }
+
+int 
+sys_shutdown( void ){
+  return shutdown();
+}

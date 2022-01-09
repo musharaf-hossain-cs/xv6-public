@@ -26,6 +26,7 @@ int uptime(void);
 int cps(void);
 int triple(int);
 int clear(void);
+int shutdown(void);
 
 // ulib.c
 int stat(const char*, struct stat*);

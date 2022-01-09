@@ -23,3 +23,4 @@
 #define SYS_cps    22
 #define SYS_triple 23
 #define SYS_clear  24
+#define SYS_shutdown 25
