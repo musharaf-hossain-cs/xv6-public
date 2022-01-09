@@ -104,6 +104,8 @@ extern int sys_wait(void);
 extern int sys_write(void);
 extern int sys_uptime(void);
 extern int sys_cps(void);
+extern int sys_triple(void);
+extern int sys_clear(void);
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
@@ -128,6 +130,8 @@ static int (*syscalls[])(void) = {
 [SYS_mkdir]   sys_mkdir,
 [SYS_close]   sys_close,
 [SYS_cps]     sys_cps,
+[SYS_triple]  sys_triple,
+[SYS_clear]   sys_clear,
 };
 
 
@@ -153,7 +157,9 @@ static int (*syscalls[])(void) = {
 [SYS_link]    "link",
 [SYS_mkdir]   "mkdir",
 [SYS_close]   "close",
-[SYS_cps]     "cps"
+[SYS_cps]     "cps",
+[SYS_triple]  "triple",
+[sys_clear]   "clear"
 };*/
 
 

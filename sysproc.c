@@ -96,3 +96,15 @@ sys_cps( void )
 {
   return cps ();
 }
+
+int 
+sys_triple( void ){
+  int x;
+  argint(0, &x);
+  return triple(x);
+}
+
+int 
+sys_clear( void ){
+  return clear();
+}
